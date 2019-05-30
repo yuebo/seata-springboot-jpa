@@ -13,6 +13,8 @@ public class AccountService {
     @GlobalTransactional
     public void insert(Account account){
         accountRepository.save(account);
-        throw new RuntimeException("rollback test");
+        if (account.getName().startsWith("tx2")){
+            throw new RuntimeException("rollback test");
+        }
     }
 }

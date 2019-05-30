@@ -3,8 +3,8 @@ package com.eappcat.seata.client.feign;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(url = "https://www.baidu.com",name = "test")
+@FeignClient(url = "http://localhost:8080/test",name = "test")
 public interface TestClient {
     @GetMapping
-    String baidu();
+    String test();
 }

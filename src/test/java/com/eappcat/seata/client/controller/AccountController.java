@@ -1,5 +1,6 @@
 package com.eappcat.seata.client.controller;
 
+import com.eappcat.seata.client.entity.Account;
 import com.eappcat.seata.client.feign.TestClient;
 import com.eappcat.seata.client.service.AccountService;
 import io.seata.spring.annotation.GlobalTransactional;
@@ -15,11 +16,20 @@ public class AccountController {
     private TestClient testClient;
     @GetMapping
     @GlobalTransactional
+    public String index(){
+        Account account=new Account();
+        account.setName("tx1_"+System.currentTimeMillis());
+        accountService.insert(account);
+        String result=testClient.test();
+        return result;
+    }
+
+    @GetMapping("/test")
+    @GlobalTransactional
     public String test(){
-        String baidu=testClient.baidu();
-//        Account account=new Account();
-//        account.setName("name_"+System.currentTimeMillis());
-//        accountService.insert(account);
-        return baidu;
+        Account account=new Account();
+        account.setName("tx2_"+System.currentTimeMillis());
+        accountService.insert(account);
+        return "ok";
     }
 }
