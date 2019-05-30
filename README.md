@@ -8,7 +8,12 @@ Spring Boot JPA集成分布式事务Seata
 3. 集成Spring Cloud Feign Client
 
 ## 运行
-下载Seata 0.6.0版本，启动服务。
+下载Seata 0.6.0版本，启动服务，也可以使用[这个](https://github.com/yuebo/seata-server-starter)
+
+
+作为测试，你可以使用[seata的修改版本](https://github.com/yuebo/seata)
+
+此版本对支持的数据库字段类型做了兼容，支持数字和日期，官方版本对bigint和timestamp等类型兼容性不强。
 
 运行SeataStarterApplication类
 
