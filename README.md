@@ -125,3 +125,27 @@ store {
 
 }
 ```
+
+使用方法
+```java
+@Service
+public class AccountService {
+    @Autowired
+    private AccountRepository accountRepository;
+    @GlobalTransactional
+    public void insert(Account account){
+        accountRepository.save(account);
+        throw new RuntimeException("rollback test");
+    }
+}
+```
+
+远程调用
+```java
+@FeignClient(url = "http://localhost:8080/test",name = "test")
+public interface TestClient {
+    @GetMapping
+    String test();
+}
+
+```
