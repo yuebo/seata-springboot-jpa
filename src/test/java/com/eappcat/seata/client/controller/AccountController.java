@@ -1,7 +1,7 @@
-package com.eappcat.seata.demo.controller;
+package com.eappcat.seata.client.controller;
 
-import com.eappcat.seata.demo.feign.TestClient;
-import com.eappcat.seata.demo.service.AccountService;
+import com.eappcat.seata.client.feign.TestClient;
+import com.eappcat.seata.client.service.AccountService;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.eappcat.seata</groupId>
-    <artifactId>jpa-starter</artifactId>
+    <artifactId>client-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>jpa-starter</name>
+    <name>client-starter</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -53,6 +53,11 @@
             <groupId>io.seata</groupId>
             <artifactId>seata-spring</artifactId>
             <version>${seata.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

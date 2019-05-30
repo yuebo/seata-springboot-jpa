@@ -1,7 +1,7 @@
-package com.eappcat.seata.demo.service;
+package com.eappcat.seata.client.service;
 
-import com.eappcat.seata.demo.dao.AccountRepository;
-import com.eappcat.seata.demo.entity.Account;
+import com.eappcat.seata.client.dao.AccountRepository;
+import com.eappcat.seata.client.entity.Account;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

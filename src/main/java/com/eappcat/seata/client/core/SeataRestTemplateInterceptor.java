@@ -1,4 +1,4 @@
-package com.eappcat.seata.demo.core;
+package com.eappcat.seata.client.core;
 
 import io.seata.core.context.RootContext;
 import org.springframework.http.HttpRequest;

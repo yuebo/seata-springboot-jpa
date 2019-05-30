@@ -11,3 +11,5 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  seata:
+    group-id: group1

@@ -1,4 +1,4 @@
-package com.eappcat.seata.demo.config;
+package com.eappcat.seata.client.config;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;

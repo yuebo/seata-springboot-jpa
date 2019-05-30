@@ -1,4 +1,4 @@
-package com.eappcat.seata.demo;
+package com.eappcat.seata.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

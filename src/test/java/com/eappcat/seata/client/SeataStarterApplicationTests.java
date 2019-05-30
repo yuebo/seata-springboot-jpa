@@ -1,4 +1,4 @@
-package com.eappcat.seata.demo;
+package com.eappcat.seata.client;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

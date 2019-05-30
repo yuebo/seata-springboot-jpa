@@ -1,6 +1,6 @@
-package com.eappcat.seata.demo.config;
+package com.eappcat.seata.client.config;
 
-import com.eappcat.seata.demo.core.SeataRestTemplateInterceptor;
+import com.eappcat.seata.client.core.SeataRestTemplateInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

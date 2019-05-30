@@ -1,4 +1,4 @@
-package com.eappcat.seata.demo.feign;
+package com.eappcat.seata.client.feign;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

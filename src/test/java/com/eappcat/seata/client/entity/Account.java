@@ -1,4 +1,4 @@
-package com.eappcat.seata.demo.entity;
+package com.eappcat.seata.client.entity;
 
 import lombok.Data;
 
